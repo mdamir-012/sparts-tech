@@ -11,7 +11,7 @@ const data = [
   },
   {
     name: `Delhi Public School`,
-    img: `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjTvn0GEuoflFsS21thot6ZoddshPQtlBoVvXmOieo2w&s`,
+    img: `https://www.sskunjpura.org/admin/logged/images/homeslider/c81e728d9d4c2f636f067f89cc14862c2-Academic-Block-(SS-Kunjpura)-(1).jpg`,
     review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
   },
   {
@@ -35,7 +35,9 @@ const Academics = () => {
   const settings = {
     dots: false,
     infinite: true,
+    autoplay:true,
     speed: 500,
+    autoplaySpeed:2000,
     slidesToShow: 4,
     slidesToScroll: 1,
   };
@@ -45,7 +47,7 @@ const Academics = () => {
         <h1 className="w-[220px] text-white font-sans text-3xl font-medium  mx-2">
           Explore Our Top Academies
         </h1>
-        <div className="mt-4">
+        <div className="mt-4 ">
           <Slider {...settings}>
             {data.map((elem) => (
               <div className="bg-white h-[33%] text-black rounded-xl">
