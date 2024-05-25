@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { CgProfile } from "react-icons/cg";
 
 const data = [
   {
@@ -53,13 +54,16 @@ const Cards = () => {
         <Slider {...settings}>
           {data.map((elem) => (
             <div className=" h-[30%] text-black rounded-xl">
-              <div className="h-[100%] items-center rounded-t-xl">
+              <div className="relative h-[100%] items-center rounded-t-xl">
                 {" "}
                 <img
                   src={elem.img}
                   className="width-[100%] h-52 object-cover rounded-xl"
                   alt={elem.name}
                 />
+                <div className="absolute bottom-2  z-10">
+                  <CgProfile className="text-3xl bg-gray-500 text-white ml-2 rounded-3xl " />
+                </div>
               </div>
             </div>
           ))}
