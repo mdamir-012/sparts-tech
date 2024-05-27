@@ -41,11 +41,37 @@ const Cards = () => {
     autoplayspeed: 2000,
     slidesToShow: 4,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   return (
-    <div className="w-full h-96 p-8 bg-gray-300">
-      <div>
-        <h1 className="text-yellow-500 text-4xl font-semibold text-right">
+    <div className="w-full h-[500px] p-8 bg-gray-300">
+      <div className="py-4">
+        <h1 className="text-yellow-500 text-4xl font-semibold text-right mt-6">
           Happy Kids, <br /> <span>Satisfied Parents!</span>
         </h1>
       </div>

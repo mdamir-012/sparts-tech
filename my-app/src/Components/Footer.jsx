@@ -10,7 +10,7 @@ const Footer = () => {
       </div>
       <div className="flex justify-evenly m-auto">
         <input type="email" placeholder="E-mail" className="p-2 w-72 rounded-lg" />
-        <button className="bg-sky-400 rounded-lg mx-4 text-white px-6">Subscribe</button>
+        <button className="bg-sky-400 rounded-lg mx-4 text-white px-6 hover:bg-sky-700">Subscribe</button>
       </div>
       </div>
     </div>

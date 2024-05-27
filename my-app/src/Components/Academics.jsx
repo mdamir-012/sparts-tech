@@ -38,12 +38,12 @@ const Academics = () => {
     autoplay:true,
     speed: 500,
     autoplaySpeed:2000,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
   };
   return (
-    <div className="w-full h-1/2 bg-sky-500 p-8">
-      <div className="w-[99%] m-auto mt-6">
+    <div className="w-full h-[500px] bg-sky-500 p-8">
+      <div className="w-[99%] m-auto mt-8">
         <h1 className="w-[220px] text-white font-sans text-3xl font-medium  mx-2 text-start">
           Explore Our Top Academies
         </h1>
