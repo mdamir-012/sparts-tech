@@ -69,7 +69,7 @@ const Cards = () => {
     ],
   };
   return (
-    <div className="w-full h-[500px] p-8 bg-gray-300">
+    <div className="w-full h-[500px] p-8 bg-sky-200">
       <div className="py-4">
         <h1 className="text-yellow-500 text-4xl font-semibold text-right mt-6">
           Happy Kids, <br /> <span>Satisfied Parents!</span>
@@ -77,14 +77,14 @@ const Cards = () => {
       </div>
 
       <div className="mt-4">
-        <Slider {...settings}>
+        <Slider className=" text-4xl" {...settings}>
           {data.map((elem) => (
             <div className=" h-[30%] text-black rounded-xl">
               <div className="relative h-[100%] items-center rounded-t-xl">
                 {" "}
                 <img
                   src={elem.img}
-                  className="width-[100%] h-52 object-cover rounded-xl"
+                  className="width-[100%] h-60 object-cover rounded-xl"
                   alt={elem.name}
                 />
                 <div className="absolute bottom-2  z-10">

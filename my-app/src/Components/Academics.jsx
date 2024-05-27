@@ -40,21 +40,47 @@ const Academics = () => {
     autoplaySpeed:2000,
     slidesToShow: 3,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   return (
-    <div className="w-full h-[500px] bg-sky-500 p-8">
+    <div className="w-full h-[500px] bg-orange-300 p-8">
       <div className="w-[99%] m-auto mt-8">
         <h1 className="w-[220px] text-white font-sans text-3xl font-medium  mx-2 text-start">
           Explore Our Top Academies
         </h1>
         <div className="mt-4 ">
-          <Slider {...settings}>
+          <Slider  {...settings}>
             {data.map((elem) => (
               <div className="bg-white h-[33%] text-black rounded-xl">
                 <div className="flex justify-center items-center rounded-t-xl">
                   <img
                     src={elem.img}
-                    className="w-full h-60 object-cover  rounded-xl"
+                    className="w-full h-72 object-cover  rounded-xl"
                     alt={elem.name}
                   />
                 </div>
